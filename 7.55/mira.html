@@ -1,18 +1,4 @@
 <html>
-<style>
-body{color: white; background-image:url(img.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
-input{width:25px;height:25px;background-color: transparent;}
-button {
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
-}
-button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            color: white;
-            border-radius: 10px;
-}</style>
 <body onload="go()">
 <script>
 function print(){}
@@ -43,7 +29,7 @@ function done()
 
 window.midExploit = function()
 {
-    preloadScripts(['blob.js', 'jb.js', 'MiraLoader.js', 'Mira.js', 'netcat.js'], go);
+    preloadScripts(['blob.js', 'jb.js', 'netcat.js'], go);
 }
 
 window.postExploit = function()
@@ -55,9 +41,9 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="utils.js"></script>
-<script src="int64.js"></script>
-<script src="ps4.js"></script>
+<script src="webkit-7.50/external/utils.js"></script>
+<script src="webkit-7.50/external/int64.js"></script>
+<script src="webkit-7.50/external/ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
