@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><!--  -->
 <head>
-<title>Prb 7.55 Test</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="7.55/index.css">
-<link rel="stylesheet" href="7.55/balloon.min.css" >
+    <title>Download Station</title>
+    <link rel="shortcut icon" href="favicon.ico"></link>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="balloon.min.css" >
+	<script>
+    function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.title="Installing offline cache: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){;document.title="Now Close And Reopen Your User Guide !";},1000);setTimeout(function(){window.location.href = document.referrer;},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
 </head>
 
 <body>
-  <script>
-    function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.title="Installing offline cache: " + Percent + "%";}
-    function DisplayCacheProgress(){setTimeout(function(){;document.title="Now Close Your User Guide & Restart Your PS4 !";},1000);setTimeout(function(){window.location.href = document.referrer;},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-</script>
-
 <div style="text-align:center">
-<h1 id="msgs" style="font-size:40px;color:white;text-shadow: 4px 4px 4px #326cb3;">خليها تعجج تهكير اصدار 7.55</h1>
+<h1 style="font-size:40px;color:white;text-shadow: 4px 4px 4px #326cb3;">   " Download Station - by - Wisam Alzataf "   </h1>
+<div style="text-align:center">
+<h1 style="font-size:40px;color:white;text-shadow: 4px 4px 4px #326cb3;"> facebook.com/DownloadStationLY  زورونا على صفحتنا  </h1>
+
+
+  
 
 <h1 style='margin-bottom:400px;'></h1>
-<button aria-label="Jailbreak + Mira" data-balloon-pos="up"><img src="7.55/mira.png" onclick="window.location.href='7.55/mira.html'"></button>
-<button aria-label="App2USB" data-balloon-pos="up"><img src="7.55/app2usb.png" onclick="window.location.href='7.55/app2usb.html'"></button>
-<button aria-label="Disable Updates" data-balloon-pos="up"><img src="7.55/disableupdates.png" onclick="window.location.href='7.55/disableupdates.html'"></button>
-<button aria-label="Enable Updates" data-balloon-pos="up"><img src="7.55/enableupdates.png" onclick="window.location.href='7.55/enableupdates.html'"></button>
-<button aria-label="Dumper" data-balloon-pos="up"><img src="7.55/dumper.png" onclick="window.location.href='7.55/dumper.html'"></button>
-<button aria-label="Backup" data-balloon-pos="up"><img src="7.55/backup.png" onclick="window.location.href='7.55/backup.html'"></button>
-<button aria-label="Restore" data-balloon-pos="up"><img src="7.55/restore.png" onclick="window.location.href='restore.html'"></button>
-<button aria-label="FTP" data-balloon-pos="up"><img src="7.55/ftp.png" onclick="window.location.href='7.55/ftp.html'"></button>
-<button aria-label="Todex" data-balloon-pos="up"><img src="7.55/todex.png" onclick="window.location.href='7.55/todex.html'"></button>
-
-<h1 style="text-align:center;font-size:20px;color:white;text-shadow: 4px 4px 4px #f3c108">خليها تعجج لتحميل الالعاب</h1>
-<h1 style="text-align:center;font-size:20px;color:white;text-shadow: 4px 4px 4px #de0029"></h1>
-
+<button aria-label="Download Station " data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=goldhen_755.js"><img src="hen.png" ></a>
+<button aria-label="Jailbreak + Mira" data-balloon-pos="up"><a href="mira.html"><img src="mira.png" ></a>
+<button aria-label="App2USB" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=app2usb.js"><img src="app2usb.png" ></a>
+<button aria-label="Disable Updates" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=disableupdates.js"><img src="disableupdates.png" ></a>
+<button aria-label="Enable Updates" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=enableupdates.js"><img src="enableupdates.png" ></a>
+<button aria-label="Dumper" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=dumper.js"><img src="dumper.png" ></a>
+<button aria-label="Backup" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=backup.js"><img src="backup.png" ></a>
+<button aria-label="Restore" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=restore.js"><img src="restore.png" ></a>
+<button aria-label="FTP" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=ftp.js"><img src="ftp.png" ></a>
+<button aria-label="Todex" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=todex.js"><img src="todex.png" ></a>
+<button aria-label="Fan-Control" data-balloon-pos="up"><a href="payload.html#p0=mira.js&p1=fan-control.js"><img src="fan.png" ></a></button>
+<select id="tempC" ></select>°C
 </div>
+
+
+<h1 style="text-align:center;font-size:20px;color:white;text-shadow: 4px 4px 4px #f3c108"> </h1>
+<h1 style="text-align:center;font-size:20px;color:white;text-shadow: 4px 4px 4px #de0029"> </h1>
+
+
+
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
 </body>
 </html>
